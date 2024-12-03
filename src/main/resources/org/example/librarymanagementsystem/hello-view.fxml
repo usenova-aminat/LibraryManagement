@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.librarymanagementsystem.LibraryController">
+    <children>
+        <!-- Поле ввода для поиска -->
+        <TextField fx:id="searchField" layoutX="187.0" layoutY="29.0" prefHeight="26.0" prefWidth="227.0" promptText="Search" />
+
+        <!-- Метка для поля поиска -->
+        <Label layoutX="61.0" layoutY="30.0" prefHeight="24.0" prefWidth="54.0" text="Search">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+
+        <!-- Таблица для отображения данных -->
+        <TableView fx:id="tableView" layoutX="61.0" layoutY="75.0" prefHeight="300.0" prefWidth="480.0">
+            <columns>
+                <!-- Столбец для названия книг -->
+                <TableColumn fx:id="titleColumn" text="Title" prefWidth="240.0" />
+                <!-- Столбец для авторов -->
+                <TableColumn fx:id="authorColumn" text="Author" prefWidth="240.0" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
